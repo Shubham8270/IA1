@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+         nav a.sitename{
+            flex:1;
+            text-align: left;
+        }
+        header {
+            padding: 10px;
+            margin-bottom: 1px;
+        }
+        .container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 10px;
+		background-image: url(MV5BYzI0YjYxY2UtNzRjNS00NTZiLTgzMDItNGEzMjU5MmE0ZWJmXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg);
+
+	}
+
+        nav {
+            display: flex;
+            justify-content: safe;
+            align-items: center;
+            padding: 5px;
+            margin:auto;
+            background-color: #f1f1f1;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+.footer-text {
+		background-color: #f0f0f0;
+		padding: 20px;
+		text-align: center;
+		border: 1p;
+		color: #666;
+	}
+        nav a.sitename{
+            flex:1;
+            text-align: left;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium';
+            font-weight: bolder;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        nav a.contact:hover {
+            background-color: #ddd;
+        }
+
+        nav a.contact:active {
+            background-color: #ccc;
+        }
+        .container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 10px;
+		background-image: url();
+	}
+    .table{
+        width: 100px;
+        height: 100px;
+        border: 1px;
+    }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <header>
+        <nav>
+                <img src="Adownload1.jpg" alt="Logo" class="logo">
+                <a href="A1.html" class="sitename"><p>Dragon ball Z</p></a>
+                <a href="a2.html" class="contact"><p>CONTACT</p></a>
+       </nav>
+    </header>
+    <div class="container">
+        <div class="container" style="text-align: center; background-color: red;">
+            WELCOME TO THE WORLD OF DRAGON BALL
+        </div><br>
+        <div>
+            Are you a fan of Dragon Ball and need help with something related to the series? Whether you're looking for information on a specific character, episode, or arc, or just want to discuss the latest developments in the world of Dragon Ball, we're here to help! Our team of experts is passionate about all things Dragon Ball and would be happy to assist you. Just reach out to us through our contact form or social media channels and we'll do our best to provide you with the help and guidance you need. Let's explore the world of Dragon Ball together!"
+        </div><br>
+        <div>
+            FORM
+            <br><br>
+            <form action = "javascript:submitForm()" onSubmit = "return validate()">
+                <table class="table" >
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="e.g shubham" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Required" required><span id="emailerr"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genre">Favorite genre:</label></td>
+                        <td><input list="genre" name="genre" id="genre" placeholder="tap to see" required></td>
+                    </tr>
+                        <datalist id="genre">
+                            <option value="horror"></option>
+                            <option value="commedy"></option>
+                            <option value="fantasy"></option>
+                            <option value="fiction"></option>
+                            <option value="mystery"></option>
+                        </datalist>
+                </table>
+                <br>
+                <input type="checkbox" id="myCheckbox" name="myCheckbox" checked value="yes" required>
+                <label for="myCheckbox">Subscribe  to get updated about the new episodes.</label>
+                <br><br>
+                <input type="submit" name="submit" value="submit" style="align-items: center;" >
+
+            </form>
+            <script>
+               
+               function validate() {
+        let validated = true;
+        let ele1 = document.getElementById("name");
+        let ele2 = document.getElementById("gener")
+        if (ele1.value.length < 0) {
+          window.alert("Name can not be empty");
+          validated = false;
+        } 
+        return validated;
+        const form = document.getElementById('myForm');
+	const nameInput = document.getElementById('name');
+	const emailInput = document.getElementById('email');
+
+	form.addEventListener('submit', function(event) {
+		if (nameInput.value.trim() === '' || emailInput.value.trim() === '') {
+			event.preventDefault();
+			alert('Please fill in all required fields!');
+		}
+	});
+
+      }
+      function submitForm() {
+        window.alert("Form Submitted");
+      }
+  
+                
+              </script>
+            
+        </div>
+    
+
+    </div>
+    <div class="footer-text">
+		<p>All rights are reversed</p>
+	</div>
+</body>
+</html>
